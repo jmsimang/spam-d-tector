@@ -17,18 +17,18 @@ X = data[:, :48]
 Y = data[:, -1]
 
 # all rows up till last 100 rows
-Xtrain = X[:-100, ]
-Ytrain = Y[:-100, ]
+X_train = X[:-100, ] 
+y_train = Y[:-100, ]
 
 # Last 100 rows
-Xtest = X[-100:, ]
-Ytest = Y[-100:, ]
+X_test = X[-100:, ]
+y_test = Y[-100:, ]
 
 # create a model
 model = MultinomialNB()
-model.fit(Xtrain, Ytrain)
-print(f'Classification rate for NB: {round(model.score(Xtest, Ytest) * 100, 2)} % accuracy.')
+model.fit(X_train, y_train)
+print(f'Naive Bayes classification rate: {round(model.score(X_test, y_test) * 100, 2)} % accuracy.')
 
 model = AdaBoostClassifier(random_state=0)
-model.fit(Xtrain, Ytrain)
-print(f'Classification rate for AB: {round(model.score(Xtest, Ytest) * 100, 2)} % accuracy.')
+model.fit(X_train, y_train)
+print(f'AdaBoost classification rate: {round(model.score(X_test, y_test) * 100, 2)} % accuracy.')
