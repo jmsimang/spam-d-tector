@@ -1,7 +1,5 @@
 # Spam filter in Python
 
-> From the course: Natural Language Processing in Python
-
 ## About
 Through the use of sci-kit learn and python, this program is able to filter emails and text messages
 as spam based on a classification algorithm.
