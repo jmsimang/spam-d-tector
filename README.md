@@ -8,6 +8,6 @@ as spam based on a classification algorithm.
 
 ## Use-cases
 SEO tool for developers.<br>
-MAchine Learning classification models.<br>
+Machine Learning classification models.<br>
 Use in own email application to classify and filter spam messages.<br>
 Whatever tickles your fancies... :)
